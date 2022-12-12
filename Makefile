@@ -1,9 +1,9 @@
 deps_instances:
-		sudo zypper install clang htop neofetch wget curl zypper-aptitude go 
-		sudo zypper install zypper install libXcomposite1 libXi6 libXext6 libXau6
-		sudo zypper isntall libX11-6 libXrandr2 libXrender1 libXss1 libXtst6
-		sudo zypper install libXdamage1 libXcursor1 libxcb1 libasound2 
-		sudo zypper install libX11-xcb1 Mesa-libGL1 Mesa-libEGL1 ufw
+		sudo zypper install clang htop neofetch wget curl zypper-aptitude go --non-interactive
+		sudo zypper install zypper install libXcomposite1 libXi6 libXext6 libXau6 --non-interactive
+		sudo zypper isntall libX11-6 libXrandr2 libXrender1 libXss1 libXtst6 --non-interactive
+		sudo zypper install libXdamage1 libXcursor1 libxcb1 libasound2  --non-interactive
+		sudo zypper install libX11-xcb1 Mesa-libGL1 Mesa-libEGL1 ufw --non-interactive
 		bash installer.sh
 		clang delete_anaconda_script.cpp -o delete_anaconda_script
 		./delete_anaconda_script
@@ -39,4 +39,4 @@ jarfile:
 		docker rm -f build-jar-inside-docker
 
 ruby_installation:
-	zypper install ruby
+	zypper install ruby --non-interactive
