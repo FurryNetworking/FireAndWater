@@ -51,6 +51,7 @@ elif [ $task_no == 9 ]; then
   echo Built.
   make docker_cleaner_instance
   ./docker_cleaner
+  make typescript_environment
   ts-node deleter.ts
 else
   echo An error occured.
