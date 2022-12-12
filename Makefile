@@ -35,6 +35,6 @@ element_files:
 textediting_instance:
     sudo apt install nano vim
 
-coffeefile_instance
+coffeefile_instance:
     sudo apt install coffeescript
     
