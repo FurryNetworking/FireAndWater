@@ -16,6 +16,10 @@ r1.question("Add version? [y/n] ", (answer1) => {
       var builder = require("xmlbuilder");
       r1.close();
       r1.removeAllListeners();
+      var PythonShell = require('python-shell');
+      PythonShell.run('add_needed_lines.py', options, function (err, results) { 
+        pyshell.send("[INFO] Done")
+      };
     });
     r1.question("What is the Element version you want? ", (answer2) => {
       const version = answer2.toLowerCase();
