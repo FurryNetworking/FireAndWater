@@ -8,8 +8,8 @@
 ###### Before anything, if make isn't installed, PLEASE install it.
 ###### Step 1: First off, we're going to want to get ready for things. Run ``sudo make ruby_installation && gem install mixlib-shellout && ruby executor.rb`` to prepare the enviroment.
 ###### Step 2: Next, we're going to want to run ``sudo make deps_instances``, followed by ``chmod 777 installer.sh && sudo bash installer.sh`` to grab our dependencies. Be sure to run through the Anaconda installer as well, and configure it to be at least Python 3.
-###### Step 3, Next, run ``make typescript_environment`` to setup our Typescript dependencies.
-###### Step 4, Next, run ``tsc configurator.tsc`` and follow the prompts to setup our configs.
+###### Step 3, Next, run ``make typescript_enviroment`` to setup our Typescript dependencies.
+###### Step 4, Next, run ``tsc configurator.ts`` and follow the prompts to setup our configs.
 ###### Step 5, Next, run ``docker build -f Dockerfile.java``. This will build the password generator we'll be using in a moment, and also install Java runtimes.
 ###### Step 6, Next, run ``sudo make textediting_instance``. This will install a few needed things if you don't already have them.
 ###### Step 7, Next, run ``make jarfile && java -jar generator.jar``. This will give you a password, put it somewhere or copy it, because you'll need it very shortly.
