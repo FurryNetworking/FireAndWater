@@ -1,6 +1,6 @@
 deps_instances:
 		zypper -n install clang htop neofetch wget curl zypper-aptitude go
-		zypper -n install zypper install libXcomposite1 libXi6 libXext6 libXau6
+		zypper -n install libXcomposite1 libXi6 libXext6 libXau6
 		zypper -n inatall libX11-6 libXrandr2 libXrender1 libXss1 libXtst6
 		zypper -n install libXdamage1 libXcursor1 libxcb1 libasound2
 		zypper -n install libX11-xcb1 Mesa-libGL1 Mesa-libEGL1 ufw docker
