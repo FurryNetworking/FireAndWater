@@ -19,8 +19,7 @@ rl.question('Add version? [y/n] ', (answer) => {
       rl.question('What is the Element version you want? ', (answer) => {
         const version = answer.toLowerCase()
         var xml1 = builder.create('root')
-          .ele('xmlbuilder')
-            .ele('version', {'type': 'integer_data'}, version)
+          .ele('version', {'type': 'integer_data'}, version)
           .end({ pretty: true});
         fs.writeFileSync("version.xml", xml1 function(err2){
         if(err2){
@@ -30,7 +29,7 @@ rl.question('Add version? [y/n] ', (answer) => {
       rl.question('What is the Anaconda version you want? ', (answer) => {
         const ver = answer.toLowerCase()
         var xml2 = builder.create('root')
-          .ele('xmlbuilder')
+          .ele('data')
             .ele('version', {'type': 'integer_data'}, ver)
           .end({ pretty: true});
         fs.writeFileSync("anaconda.xml", xml2 function(err3){
