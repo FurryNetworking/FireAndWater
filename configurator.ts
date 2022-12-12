@@ -15,16 +15,27 @@ rl.question('Add version? [y/n] ', (answer) => {
       if(err1){
         return console.log("[ERROR] Could not setup requirements.txt.");
       }
-      rl.question('What is the version you want? ', (answer) => {
+      var builder = require('xmlbuilder');
+      rl.question('What is the Element version you want? ', (answer) => {
         const version = answer.toLowerCase()
-        var builder = require('xmlbuilder');
-        var xml = builder.create('root')
+        var xml1 = builder.create('root')
           .ele('xmlbuilder')
             .ele('version', {'type': 'integer_data'}, version)
           .end({ pretty: true});
-        fs.writeFileSync("version.xml", xml, function(err2){
+        fs.writeFileSync("version.xml", xml1 function(err2){
         if(err2){
           return console.log("[ERROR] Could not setup version.xml.");
+        }
+      })
+      rl.question('What is the Anaconda version you want? ', (answer) => {
+        const ver = answer.toLowerCase()
+        var xml2 = builder.create('root')
+          .ele('xmlbuilder')
+            .ele('version', {'type': 'integer_data'}, ver)
+          .end({ pretty: true});
+        fs.writeFileSync("anaconda.xml", xml2 function(err3){
+        if(err3){
+          return console.log("[ERROR] Could not setup anaconda.xml.");
         }
       })
   };
