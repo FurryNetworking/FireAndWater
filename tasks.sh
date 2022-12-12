@@ -39,7 +39,7 @@ elif [ $task_no = 8 ]; then
   if [[ -f configurator.ts ]]; then
     ts-node configurator.ts
   fi
-elif [ $task_no ==9 ]; then
+elif [ $task_no = 9 ]; then
   git clone https://github.com/cginternals/cppfs
   set path=$CD/cppfs
   cd $path
