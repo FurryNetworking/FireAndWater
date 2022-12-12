@@ -57,8 +57,7 @@ rl.question("Add version? [y/n] ", (answer) => {
             });
           });
         });
-        break;
       });
       rl.close();
-  }
+  };
 });
