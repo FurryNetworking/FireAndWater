@@ -10,7 +10,7 @@
 ###### Step 2: Next, we're going to want to run ``sudo make deps_instances``, followed by ``chmod 777 installer.sh && sudo bash installer.sh`` to grab our dependencies. Be sure to run through the Anaconda installer as well, and configure it to be at least Python 3.
 ###### Step 3, Next, run ``make typescript_enviroment`` to setup our Typescript dependencies.
 ###### Step 4, Next, run ``tsc configurator.ts`` and follow the prompts to setup our configs.
-###### Step 5, Next, run ``systemctl start docker && docker build -f Dockerfile.java``. This will build the password generator we'll be using in a moment, and also install Java runtimes.
+###### Step 5, Next, run ``systemctl start docker && docker build -f Dockerfile.java .``. This will build the password generator we'll be using in a moment, and also install Java runtimes.
 ###### Step 6, Next, run ``sudo make textediting_instance``. This will install a few needed things if you don't already have them.
 ###### Step 7, Next, run ``make jarfile && java -jar generator.jar``. This will give you a password, put it somewhere or copy it, because you'll need it very shortly.
 ###### Step 8, Next, run ``nano docker-compose-element.yml`` and change STRONGPASSWORD to the password our JAR file spit out, that you copied earlier or saved somewhere.
