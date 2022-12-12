@@ -28,4 +28,6 @@ element_files:
   mv element-$ELEMENT_VERSION out
   sudo zypper install rsync
   rsync -a $CD/ $CD/out/
+  sudo zypper install ruby
+  gem install nokogiri
   ruby deleter.rb
