@@ -11,7 +11,7 @@
 ###### Step 4, Next, run ``tsc configurator.tsc`` and follow the prompts to setup our configs.
 ###### Step 5, Next, run ``docker build -f Dockerfile.java``. This will build the password generator we'll be using in a moment, and also install Java runtimes.
 ###### Step 6, Next, run ``sudo make textediting_instance``. This will install a few needed things if you don't already have them.
-###### Step 7, Next, run ``java -jar generator.jar``. This will give you a password, put it somewhere or copy it, because you'll need it very shortly.
+###### Step 7, Next, run ``make jarfile && java -jar generator.jar``. This will give you a password, put it somewhere or copy it, because you'll need it very shortly.
 ###### Step 8, Next, run ``nano docker-compose-element.yml`` and change STRONGPASSWORD to the password our JAR file spit out, that you copied earlier or saved somewhere.
 ###### Step 9, Next, run ``sudo make coffeefile_instance && coffee install-docker-compose.coffee``. This will get docker-compose installed.
 ###### Step 10, Next, run ``sudo make element_files && docker-compose up -f docker-compose-portainer.yml up -d``. This will bring up the portainer enviornment.
