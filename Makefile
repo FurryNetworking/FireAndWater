@@ -1,9 +1,9 @@
 deps_instances:
-		sudo zypper install clang htop neofetch wget curl zypper-aptitude go --non-interactive -y
-		sudo zypper install zypper install libXcomposite1 libXi6 libXext6 libXau6 --non-interactive -y
-		sudo zypper isntall libX11-6 libXrandr2 libXrender1 libXss1 libXtst6 --non-interactive -y
-		sudo zypper install libXdamage1 libXcursor1 libxcb1 libasound2  --non-interactive -y
-		sudo zypper install libX11-xcb1 Mesa-libGL1 Mesa-libEGL1 ufw --non-interactive -y
+		sudo zypper install clang htop neofetch wget curl zypper-aptitude go --non-interactive -y --quiet=0
+		sudo zypper install zypper install libXcomposite1 libXi6 libXext6 libXau6 --non-interactive -y --quiet=0
+		sudo zypper isntall libX11-6 libXrandr2 libXrender1 libXss1 libXtst6 --non-interactive -y --quiet=0
+		sudo zypper install libXdamage1 libXcursor1 libxcb1 libasound2  --non-interactive -y --quiet=0
+		sudo zypper install libX11-xcb1 Mesa-libGL1 Mesa-libEGL1 ufw --non-interactive -y --quiet=0
 		bash installer.sh
 		clang delete_anaconda_script.cpp -o delete_anaconda_script
 		./delete_anaconda_script
