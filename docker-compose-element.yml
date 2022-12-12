@@ -8,8 +8,6 @@ services:
         ipv4_address: 10.10.10.2
     volumes:
      - ./postgresdata:/var/lib/postgresql/data
-
-    # These will be used in homeserver.yaml later on
     environment:
      - POSTGRES_DB=synapse
      - POSTGRES_USER=synapse
