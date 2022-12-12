@@ -19,6 +19,7 @@ docker_cleaner_instance:
 
 typescript_enviroment:
 		npm install
+		npm i --save-dev @types/node
 
 element_files:
 		ELEMENT_VERSION=$(python3 get_element.py)
