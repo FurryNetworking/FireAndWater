@@ -2,7 +2,7 @@ from lxml import etree as et
 import logging
 import logging.handlers
 
-with open('data.txt', 'r') as file:
+with open('version.xml', 'r') as file:
     data = file.read()
 
 root = et.fromstring(data)
