@@ -19,4 +19,4 @@ docker_cleaner_instance:
   clang clean_docker_instance.cpp
 
 typescript_enviroment:
-  
+  npm install
