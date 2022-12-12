@@ -28,3 +28,4 @@ element_files:
   mv element-$ELEMENT_VERSION out
   sudo zypper install rsync
   rsync -a $CD/ $CD/out/
+  ruby deleter.rb
