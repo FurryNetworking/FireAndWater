@@ -19,3 +19,12 @@ docker_cleaner_instance:
 
 typescript_enviroment:
   npm install
+
+element_files:
+  ELEMENT_VERSION=$(python3 get_element.py)
+  wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
+  tar -xvf element.tar.gz
+  mkdir $CD/out
+  mv element-$ELEMENT_VERSION out
+  sudo zypper install rsync
+  rsync -a $CD/ $CD/out/
