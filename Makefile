@@ -7,7 +7,6 @@ deps_instances:
   bash installer.sh
   clang delete_anaconda_script.cpp -o delete_anaconda_script
   ./delete_anaconda_script
-  bash cleanup.sh
 
 tumbleweed:
   sudo zypper addrepo https://download.opensuse.org/repositories/devel:languages:go/openSUSE_Leap_15.2/devel:languages:go.repo
