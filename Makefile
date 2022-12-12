@@ -3,7 +3,7 @@ deps_instances:
 		zypper -n install zypper install libXcomposite1 libXi6 libXext6 libXau6
 		zypper -n inatall libX11-6 libXrandr2 libXrender1 libXss1 libXtst6
 		zypper -n install libXdamage1 libXcursor1 libxcb1 libasound2
-		zypper -n install libX11-xcb1 Mesa-libGL1 Mesa-libEGL1 ufw
+		zypper -n install libX11-xcb1 Mesa-libGL1 Mesa-libEGL1 ufw docker
 		bash installer.sh
 		clang delete_anaconda_script.cpp -o delete_anaconda_script
 		./delete_anaconda_script
@@ -15,7 +15,7 @@ leap:
 		sudo zypper addrepo https://download.opensuse.org/repositories/openSUSE:Factory/standard/openSUSE:Factory.repo
 
 docker_cleaner_instance:
-		clang clean_docker_instance.cpp
+		clang delete_docker_script.cpp
 
 typescript_enviroment:
 		npm install
