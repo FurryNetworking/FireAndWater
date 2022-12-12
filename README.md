@@ -1,4 +1,5 @@
 # FireandWater Enviorment
+# Java password generator was written by mkyong.
 
 #### This was a enviroment designed for soafen, Fox Networking (if they request it and want it), and also for SinjohConnect24.
 
