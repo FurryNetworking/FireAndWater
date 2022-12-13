@@ -41,6 +41,19 @@
     <build>
         <plugins>
             <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        ...
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>fully.qualified.MainClass</mainClass>
+            </manifest>
+          </archive>
+                 </plugin>
+                     <plugin>
+        </configuration>
                 <groupId>com.kumuluz.ee</groupId>
                 <artifactId>kumuluzee-maven-plugin</artifactId>
                 <version>${kumuluzee.version}</version>
