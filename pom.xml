@@ -7,7 +7,15 @@
     <artifactId>password</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
+         <configuration>
+                  <archive>
+                    <manifest>
 
+                    <!-- give full qualified name of your main class-->
+                      <mainClass>com.furrynetworking.passwordgenerator.PasswordGenerator</mainClass>
+                    </manifest>
+                  </archive>
+                </configuration>
     <name>passwordgenerator</name>
     <description>Generates passwords for our server.</description>
 
