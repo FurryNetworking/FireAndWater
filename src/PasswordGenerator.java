@@ -1,4 +1,4 @@
-package com.mkyong.regex.password;
+package com.furrydevs.passwordgenerator;
 
 import java.security.SecureRandom;
 import java.util.Arrays;
@@ -89,3 +89,9 @@ public class PasswordGenerator {
     }
 
 }
+
+  public static void main(String[] args) {
+      for (int i = 0; i < 5; i++) {
+          generateStrongPassword();
+      }
+  }
