@@ -34,6 +34,7 @@ element_files:
 		ruby deleter.rb
 
 jarfile:
+		rm -rf target
 		docker build -f Dockerfile.java -t build-jar-inside-docker-image .
 		docker create -it --name build-jar-inside-docker build-jar-inside-docker-image bash
 		docker cp build-jar-inside-docker:/target ./target
