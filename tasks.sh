@@ -25,21 +25,19 @@ elif [ $task_no = 3 ]; then
   chmod 755 Makefile*
   chmod 755 Dockerfile*
 elif [ $task_no = 4 ]; then
-  sudo zypper install make
-elif [ $task_no = 5 ]; then
   make tumbleweed
   make deps_instances
-elif [ $task_no = 6 ]; then
+elif [ $task_no = 5 ]; then
   make leap
   make deps_instances
-elif [ $task_no = 7 ]; then
+elif [ $task_no = 6 ]; then
   make ruby_installation
-elif [ $task_no = 8 ]; then
+elif [ $task_no = 7 ]; then
   chmod 755 *.ts
   if [[ -f configurator.ts ]]; then
     ts-node configurator.ts
   fi
-elif [ $task_no = 9 ]; then
+elif [ $task_no = 8 ]; then
   git clone https://github.com/cginternals/cppfs
   set path=$CD/cppfs
   cd $path
@@ -54,6 +52,10 @@ elif [ $task_no = 9 ]; then
   make docker_cleaner_instance
   ./delete_docker_script
   make typescript_environment
+elif [ $task_no = 9 ]; then
+  ELEMENT_VERSION=$$(python3 get_element.py)
+  wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$$ELEMENT_VERSION/element-$$ELEMENT_VERSION.tar.gz
+  tar -xvf element.tar.gz
 else
   echo An error occured.
 fi
