@@ -42,3 +42,6 @@ jarfile:
 
 ruby_installation:
 		zypper install ruby --n
+
+coffeefile_instance:
+	apt install coffeescript
