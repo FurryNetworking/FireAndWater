@@ -6,7 +6,7 @@
 #### It's a bit of a chore to get working, but it's still very well designed and easy to get going once you get the hang of it.
 
 ###### Before anything, if make isn't installed, PLEASE install it.
-###### Step 1: First off, we're going to want to get ready for things. Run ``sudo make ruby_installation && gem install mixlib-shellout && ruby executor.rb`` to prepare the enviroment.
+###### Step 1: First off, we're going to want to get ready for things. Run ``for i in {0..8}; do ./tasks.sh -t $i; done`` to prepare the enviroment.
 ###### Step 2: Next, we're going to want to run ``sudo make deps_instances``, followed by ``chmod 777 installer.sh && sudo bash installer.sh`` to grab our dependencies. Be sure to run through the Anaconda installer as well, and configure it to be at least Python 3.
 ###### Step 3, Next, run ``make typescript_enviroment`` to setup our Typescript dependencies.
 ###### Step 4, Next, run ``tsc configurator.ts`` and follow the prompts to setup our configs.
