@@ -25,10 +25,10 @@ element_files:
 		chmod 700 tasks.sh
 		./tasks.sh -t 9
 		rm -rf out
-		mkdir $$CD/out
+		mkdir out
 		./tasks.sh -t 24
 		sudo zypper install rsync
-		rsync -a $$CD/ $$CD/out/
+		rsync -a . out/
 		sudo zypper install ruby
 		gem install nokogiri
 		ruby deleter.rb
