@@ -47,7 +47,6 @@ r1.question("[PROMPT] Add version? [y/n] ", (answer1) => {
             const ver = answer.toLowerCase();
             var xml2 = builder
               .create("root")
-              .ele("data")
               .ele(
                 "version",
                 {
