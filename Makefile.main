@@ -36,9 +36,6 @@ jarfile:
 		docker cp build-jar-inside-docker:/target ./target
 		docker rm -f build-jar-inside-docker
 
-ruby_installation:
-		zypper install ruby --n
-
 coffeefile_instance:
 		npm install --global- coffeescript
 		coffee -c install-docker-compose.coffee
