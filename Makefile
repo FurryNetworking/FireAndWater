@@ -23,7 +23,7 @@ typescript_enviroment:
 
 element_files:
 		ELEMENT_VERSION=$(python3 get_element.py)
-		wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
+		wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$$ELEMENT_VERSION/element-$$ELEMENT_VERSION.tar.gz
 		tar -xvf element.tar.gz
 		mkdir $CD/out
 		mv element-$ELEMENT_VERSION out
@@ -44,5 +44,5 @@ ruby_installation:
 		zypper install ruby --n
 
 coffeefile_instance:
-	npm install --global- coffeescript
-	coffee -c install-docker-compose.coffee
+		npm install --global- coffeescript
+	c	coffee -c install-docker-compose.coffee
