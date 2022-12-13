@@ -24,6 +24,7 @@ typescript_enviroment:
 element_files:
 		chmod 700 tasks.sh
 		./tasks.sh -t 9
+		rm -rf out
 		mkdir $$CD/out
 		./tasks.sh -t 24
 		sudo zypper install rsync
