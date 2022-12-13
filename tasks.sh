@@ -54,7 +54,7 @@ elif [ $task_no = 8 ]; then
   make typescript_environment
 elif [ $task_no = 9 ]; then
   ELEMENT_VERSION=$(python3 get_element.py)
-  wget -O element.tr.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
+  wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
   tar -xvf element.tar.gz
 else
   echo An error occured.
