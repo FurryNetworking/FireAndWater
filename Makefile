@@ -45,5 +45,4 @@ ruby_installation:
 
 coffeefile_instance:
 	npm install --global- coffeescript
-	npm install --save-dev coffeescript
 	coffee -c install-docker-compose.coffee
