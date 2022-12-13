@@ -19,3 +19,12 @@ makefile    text diff=makefile
 .MAIN       text diff=makefile
 .RUNTIME    text diff=makefile
 .RUMTIMES   text diff=makefile
+
+# Our dockerfile for building java, gets detected as Java, so we prevent that.
+.java        text diff=java
+.jarbuild    text diff=java
+.Jarbuild    text diff=java
+.JarBuild    text diff=java
+.JARBUILD    text diff=java
+.Java        text diff=java
+.JAVA        text diff=java
