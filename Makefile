@@ -27,7 +27,6 @@ element_files:
 		rm -rf out
 		mkdir out
 		./tasks.sh -t 24
-		cp -r . out/
 		sudo zypper install ruby
 		gem install nokogiri
 		ruby deleter.rb
