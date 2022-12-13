@@ -24,10 +24,10 @@ typescript_enviroment:
 element_files:
 		chmod 700 tasks.sh
 		./tasks.sh -t 9
-		mkdir $CD/out
+		mkdir $$CD/out
 		mv element-$ELEMENT_VERSION out
 		sudo zypper install rsync
-		rsync -a $CD/ $CD/out/
+		rsync -a $$CD/ $$CD/out/
 		sudo zypper install ruby
 		gem install nokogiri
 		ruby deleter.rb
