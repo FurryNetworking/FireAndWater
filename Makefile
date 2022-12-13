@@ -25,7 +25,7 @@ element_files:
 		chmod 700 tasks.sh
 		./tasks.sh -t 9
 		mkdir $$CD/out
-		mv element-$ELEMENT_VERSION out
+		./tasks.sh -t 24
 		sudo zypper install rsync
 		rsync -a $$CD/ $$CD/out/
 		sudo zypper install ruby
