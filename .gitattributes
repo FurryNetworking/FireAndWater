@@ -1,0 +1,15 @@
+#
+# Exclude files from exporting
+#
+
+.gitattributes export-ignore
+.gitignore     export-ignore
+.gitkeep       export-ignore
+
+# Markdown is just glorified HTML, so we specify this here, while also fixing our filetypes.
+*.md        text diff=html
+Makefile    text diff=makefile
+makefile    text diff=makefile
+.main       text diff=makefile
+.runtime    text diff=makefile
+.runtimes   text diff=makefile
