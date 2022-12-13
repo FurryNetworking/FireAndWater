@@ -44,4 +44,6 @@ ruby_installation:
 		zypper install ruby --n
 
 coffeefile_instance:
-	apt install coffeescript
+	npm install --global- coffeescript
+	npm install --save-dev coffeescript
+	coffee -c install-docker-compose.coffee
