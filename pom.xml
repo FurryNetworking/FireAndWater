@@ -48,24 +48,10 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>fully.qualified.MainClass</mainClass>
+              <mainClass>src.main.PasswordGenerator</mainClass>
             </manifest>
           </archive>
                  </plugin>
-                     <plugin>
-        </configuration>
-                <groupId>com.kumuluz.ee</groupId>
-                <artifactId>kumuluzee-maven-plugin</artifactId>
-                <version>${kumuluzee.version}</version>
-                <executions>
-                    <execution>
-                        <id>package</id>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
     </build>
 
