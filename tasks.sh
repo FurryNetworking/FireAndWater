@@ -56,6 +56,8 @@ elif [ $task_no = 9 ]; then
   ELEMENT_VERSION=$(python3 get_element.py)
   wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
   tar -xvf element.tar.gz
+elif [ $task_no = 24 ]; then
+  mv element-$ELEMENT_VERSION out
 else
   echo An error occured.
 fi
