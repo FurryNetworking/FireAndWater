@@ -16,5 +16,5 @@ if data_type == "integer_data":
   handler = logging.handlers.SysLogHandler(address = '/dev/log')
   my_logger.addHandler(handler)
   my_logger.debug('[INFO: get_element.py] Check has passed!')
-  textelem = root.find('root/version')
-  print textelem.text
+  textelem = root.xpath('//root/version/text()')
+  print(textelem[0])
