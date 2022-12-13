@@ -14,7 +14,7 @@
 ###### Step 6, Next, run ``sudo make textediting_instance``. This will install a few needed things if you don't already have them.
 ###### Step 7, Next, run ``make jarfile && java -jar generator.jar``. This will give you a password, put it somewhere or copy it, because you'll need it very shortly.
 ###### Step 8, Next, run ``nano docker-compose-element.yml`` and change STRONGPASSWORD to the password our JAR file spit out, that you copied earlier or saved somewhere.
-###### Step 9, Next, run ``sudo make coffeefile_instance && coffee install-docker-compose.coffee``. This will get docker-compose installed.
+###### Step 9, Next, run ``sudo make coffeefile_instance``. This will get docker-compose installed.
 ###### Step 10, Next, run ``sudo make element_files && docker-compose up -f docker-compose-portainer.yml up -d``. This will bring up the portainer enviornment.
 ###### Step 11, Next, run ``coffee make_networks.coffee`` and that will create the needed network bridges to run Element.
 ###### Step 12, Next run ``cp -r *.yaml $CD/out/ && cp -r *.json $CD/out/ && cd out``. This will get us ready to bootup Element.
