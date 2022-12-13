@@ -1,6 +1,6 @@
 # docker-compose.yml
 # Sourced from: https://nextgentips.com/2022/01/26/how-to-install-portainer-ce-with-docker-compose/
-version: '3.9'
+version: '3.3'
 
 services:
   portainer:
