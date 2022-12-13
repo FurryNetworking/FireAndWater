@@ -22,9 +22,8 @@ typescript_enviroment:
 		npm i --save-dev @types/node
 
 element_files:
-		ELEMENT_VERSION=$$(python3 get_element.py)
-		wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$$ELEMENT_VERSION/element-$$ELEMENT_VERSION.tar.gz
-		tar -xvf element.tar.gz
+		chmod 700 tasks.sh
+		./tasks.sh -t 9
 		mkdir $CD/out
 		mv element-$ELEMENT_VERSION out
 		sudo zypper install rsync
@@ -45,4 +44,4 @@ ruby_installation:
 
 coffeefile_instance:
 		npm install --global- coffeescript
-	c	coffee -c install-docker-compose.coffee
+		coffee -c install-docker-compose.coffee
