@@ -1,30 +1,50 @@
-#
 # Exclude files from exporting
-#
 
 .gitattributes export-ignore
 .gitignore     export-ignore
 .gitkeep       export-ignore
+.gitmodules    export-ignore
 
 # Markdown is just glorified HTML, so we specify this here, while also fixing our filetypes.
-*.md        text diff=html
-Makefile    text diff=makefile
-makefile    text diff=makefile
-.main       text diff=makefile
-.runtime    text diff=makefile
-.runtimes   text diff=makefile
-.Main       text diff=makefile
-.Runtime    text diff=makefile
-.Runtimes   text diff=makefile
-.MAIN       text diff=makefile
-.RUNTIME    text diff=makefile
-.RUMTIMES   text diff=makefile
+
+Makefile       linguist-language=makefile
+makefile       linguist-language=makefile
+*.main         linguist-language=makefile
+*.runtime      linguist-language=makefile
+*.runtimes     linguist-language=makefile
+*.Main         linguist-language=makefile
+*.Runtime      linguist-language=makefile
+*.Runtimes     linguist-language=makefile
+*.MAIN         linguist-language=makefile
+*.RUNTIME      linguist-language=makefile
+*.RUMTIMES     linguist-language=makefile
+*.md           text diff=html
+*.md           linguist-language=html
+Makefile       text diff=makefile
+makefile       text diff=makefile
+*.main         text diff=makefile
+*.runtime      text diff=makefile
+*.runtimes     text diff=makefile
+*.Main         text diff=makefile
+*.Runtime      text diff=makefile
+*Runtimes      text diff=makefile
+*.MAIN         text diff=makefile
+*.RUNTIME      text diff=makefile
+*.RUMTIMES     text diff=makefile
 
 # Our dockerfile for building java, gets detected as Java, so we prevent that.
-.java        text diff=java
-.jarbuild    text diff=java
-.Jarbuild    text diff=java
-.JarBuild    text diff=java
-.JARBUILD    text diff=java
-.Java        text diff=java
-.JAVA        text diff=java
+
+*.java         linguist-language=java
+*.jarbuild     linguist-language=Dockerfile
+*.Jarbuild     linguist-language=Dockerfile
+*.JarBuild     linguist-language=Dockerfile
+*.JARBUILD     linguist-language=Dockerfile
+*.Java         linguist-language=Dockerfile
+*.JAVA         linguist-language=Dockerfile
+*.java         text diff=java
+*.jarbuild     text diff=Dockerfile
+*.Jarbuild     text diff=Dockerfile
+*.JarBuild     text diff=Dockerfile
+*.JARBUILD     text diff=Dockerfile
+*.Java         text diff=Dockerfile
+*.JAVA         text diff=Dockerfile
