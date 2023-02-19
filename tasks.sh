@@ -46,7 +46,7 @@ elif [ $task_no = 8 ]; then
   echo Built.
   make docker_cleaner_instance --file Makefile.main
   ./delete_docker_script
-  make typescript_environment
+  make typescript_environment --file Makefile.main
 elif [ $task_no = 9 ]; then
   ELEMENT_VERSION=$(python3 get_element.py)
   wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
