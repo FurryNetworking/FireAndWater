@@ -26,12 +26,10 @@ elif [ $task_no = 3 ]; then
 elif [ $task_no = 4 ]; then
   chmod 755 Dockerfile*
 elif [ $task_no = 5 ]; then
-  make leap --file Makefile.main
-  make deps_instances --file Makefile.main
+  chmod 755 *.ts
 elif [ $task_no = 6 ]; then
   make ruby_installation --file Makefile.runtimes
 elif [ $task_no = 7 ]; then
-  chmod 755 *.ts
   git clone https://github.com/cginternals/cppfs
 elif [ $task_no = 8 ]; then
   set path=$CD/cppfs
