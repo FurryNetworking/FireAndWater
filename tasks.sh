@@ -47,7 +47,7 @@ elif [ $task_no = 8 ]; then
   cd $current_directory
   pwd
   echo Built.
-  make docker_cleaner_instance--file Makefile.main
+  make docker_cleaner_instance --file Makefile.main
   ./delete_docker_script
   make typescript_environment
 elif [ $task_no = 9 ]; then
