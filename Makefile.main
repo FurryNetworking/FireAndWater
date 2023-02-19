@@ -34,4 +34,5 @@ jarfile:
 
 coffeefile_instance:
 		npm install --global coffeescript
-		coffee -c install-docker-compose.coffee
+		chmod 777 install-docker-compose.sh
+		./install-docker-compose.sh
