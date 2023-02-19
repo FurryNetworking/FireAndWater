@@ -17,4 +17,4 @@ if data_type == "integer_data":
  my_logger.addHandler(handler)
  my_logger.debug('[INFO: get_version.py] Check has passed!')
  textelem = root.find('root/version')
- print textelem.text
+ print (textelem.text)
