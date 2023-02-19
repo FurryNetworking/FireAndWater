@@ -16,4 +16,4 @@ if data_type == "integer_data":
  my_logger.debug('[INFO: get_version.py] Check has passed!')
  textelem = root.xpath('//root//version')[0]
  #print(textelem)
- print (textelem.text)
+ print ("-" + textelem.text)
