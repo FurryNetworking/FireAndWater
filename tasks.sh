@@ -33,7 +33,7 @@ elif [ $task_no = 6 ]; then
 elif [ $task_no = 7 ]; then
   chmod 755 *.ts
   if [[ -f configurator.ts ]]; then
-    ts-node configurator.ts
+    tsc configurator.ts
   fi
 elif [ $task_no = 8 ]; then
   git clone https://github.com/cginternals/cppfs
