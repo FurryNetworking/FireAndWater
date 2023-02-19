@@ -17,7 +17,7 @@ leap:
 docker_cleaner_instance:
 		clang delete_docker_script.cpp
 
-typescript_enviroment:
+typescript_environment:
 		npm install
 		npm i --save-dev @types/node
 
