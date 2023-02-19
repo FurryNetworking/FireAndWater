@@ -46,6 +46,8 @@ elif [ $task_no = 8 ]; then
   make docker_cleaner_instance --file Makefile.main
   ./delete_docker_script
   make typescript_environment --file Makefile.main
+  systemctl start docker && docker build -f Dockerfile.java .
+  make jarfile -f Makefile.main && java -jar generator.jar
 elif [ $task_no = 9 ]; then
   ELEMENT_VERSION=$(python3 get_element.py)
   wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
