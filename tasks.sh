@@ -32,11 +32,8 @@ elif [ $task_no = 6 ]; then
   make ruby_installation --file Makefile.runtimes
 elif [ $task_no = 7 ]; then
   chmod 755 *.ts
-  if [[ -f configurator.ts ]]; then
-    tsc configurator.ts
-  fi
-elif [ $task_no = 8 ]; then
   git clone https://github.com/cginternals/cppfs
+elif [ $task_no = 8 ]; then
   set path=$CD/cppfs
   cd $path
   pwd
