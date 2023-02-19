@@ -2,6 +2,7 @@ npm i --save-dev @types/node
 tsc get_anaconda_version.ts
 npm install xml2js
 npm install xml2js-xpath
+npm install -g typescript
 tsc configurator.ts
 OUTPUT=$(node get_anaconda_version.js)
 wget https://repo.anaconda.com/archive/Anaconda$OUTPUT-Linux-x86_64.sh
