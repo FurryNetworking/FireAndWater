@@ -25,10 +25,12 @@ element_files:
 
 jarfile:
 		rm -rf target
+		apt install java-11-openjdk
 		docker build -f Dockerfile.jarbuild -t build-jar-inside-docker-image .
 		docker create -it --name build-jar-inside-docker build-jar-inside-docker-image bash
 		docker cp build-jar-inside-docker:/target ./target
 		docker rm -f build-jar-inside-docker
+		cp target/password* /home/FireAndWater/
 
 coffeefile_instance:
 		npm install --global coffeescript
