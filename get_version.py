@@ -1,6 +1,6 @@
 from lxml import etree as et
- import logging
- import logging.handlers
+import logging
+import logging.handlers
 
  with open('anaconda.xml', 'r') as file:
      data = file.read()
