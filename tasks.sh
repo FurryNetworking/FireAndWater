@@ -28,10 +28,10 @@ elif [ $task_no = 4 ]; then
   make tumbleweed --file Makefile.main
   make deps_instances --file Makefile.main
 elif [ $task_no = 5 ]; then
-  make leap--file Makefile.main
-  make deps_instances--file Makefile.main
+  make leap --file Makefile.main
+  make deps_instances --file Makefile.main
 elif [ $task_no = 6 ]; then
-  make ruby_installation--file Makefile.runtimes
+  make ruby_installation --file Makefile.runtimes
 elif [ $task_no = 7 ]; then
   chmod 755 *.ts
   if [[ -f configurator.ts ]]; then
