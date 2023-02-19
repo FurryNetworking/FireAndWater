@@ -23,10 +23,8 @@ elif [ $task_no = 2 ]; then
   sudo zypper install typescript htop
 elif [ $task_no = 3 ]; then
   chmod 755 Makefile*
-  chmod 755 Dockerfile*
 elif [ $task_no = 4 ]; then
-  make tumbleweed --file Makefile.main
-  make deps_instances --file Makefile.main
+  chmod 755 Dockerfile*
 elif [ $task_no = 5 ]; then
   make leap --file Makefile.main
   make deps_instances --file Makefile.main
