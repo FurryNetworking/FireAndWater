@@ -1,2 +1,2 @@
 ruby_installation:
-		zypper install ruby --n
+		zypper install ruby
