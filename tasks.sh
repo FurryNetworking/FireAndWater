@@ -49,11 +49,11 @@ elif [ $task_no = 8 ]; then
   systemctl start docker && docker build -f Dockerfile.java .
   make jarfile -f Makefile.main && java -jar password-1.0.0.jar
 elif [ $task_no = 9 ]; then
-  ELEMENT_VERSION=$(python3 get_element.py)
+  ELEMENT_VERSION=$(python2 get_element.py)
   wget -O element.tar.gz https://github.com/vector-im/element-web/releases/download/$ELEMENT_VERSION/element-$ELEMENT_VERSION.tar.gz
   tar -xvf element.tar.gz
 elif [ $task_no = 24 ]; then
-  ELEMENT_VERSION=$(python3 get_element.py)
+  ELEMENT_VERSION=$(python2 get_element.py)
   mv element-$ELEMENT_VERSION out
 else
   echo An error occured.
