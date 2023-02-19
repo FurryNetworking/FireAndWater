@@ -32,6 +32,7 @@ elif [ $task_no = 6 ]; then
 elif [ $task_no = 7 ]; then
   git clone https://github.com/cginternals/cppfs
 elif [ $task_no = 8 ]; then
+  make deps_instances --file Makefile.main
   set path=$CD/cppfs
   cd $path
   pwd
