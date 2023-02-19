@@ -54,7 +54,8 @@ elif [ $task_no = 9 ]; then
   tar -xvf element.tar.gz
 elif [ $task_no = 24 ]; then
   ELEMENT_VERSION=$(python2 get_element.py)
-  mv element-$ELEMENT_VERSION/*.* out
+  cp -r element-$ELEMENT_VERSION out
+  rm -rf element-$ELEMENT_VERSION
 else
   echo An error occured.
 fi
