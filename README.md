@@ -12,4 +12,4 @@
 ###### Step 4, Next, run ``sudo make element_files -f Makefile.main && docker-compose up -f docker-compose-portainer.yml up -d``. This will bring up the portainer enviornment.
 ###### Step 5, Next run ``coffee make_networks.coffee`` and that will create the needed network bridges to run Element.
 ###### Step 6, Next run ``cp -r *.yml $CD/out/ && cp -r *.json $CD/out/ && cd out``. This will get us ready to bootup Element.
-###### Step 7, Finally, run `docker-compose -f $PWD/docker-compose-element.yml up -d`` and this will start Element! Voila, everything is now booted up, and should be ready to go?
+###### Step 7, Finally, run ``docker-compose -f $PWD/docker-compose-element.yml up -d`` and this will start Element! Voila, everything is now booted up, and should be ready to go?
