@@ -69,7 +69,7 @@ r1.question("[PROMPT] Add version? [y/n] ", (answer1) => {
             PythonShell.PythonShell.run(
               "add_needed_lines.py",
               null,
-              function (err) {
+              function (err: any) {
                 if (err) throw err;
                 console.log(
                   "[INFO] Additional requirements were configured successfully."
