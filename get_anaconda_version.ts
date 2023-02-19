@@ -8,7 +8,7 @@ const options = {
         ignoreAttrs: true
     };
 const file = readFileSync('./anaconda.xml', 'utf-8');
-xml2js.parseString(file, options, function(err, json) {
+xml2js.parseString(file, options, function(err: any, json: any) {
 
   // find all elements: returns xml2js JSON of the element
   var matches = xpath.find(json, "//root");
